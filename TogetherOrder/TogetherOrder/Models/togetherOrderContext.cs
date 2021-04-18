@@ -30,10 +30,6 @@ namespace TogetherOrder.Models
         {
             modelBuilder.Entity<Account>(entity =>
             {
-                entity.HasNoKey();
-
-                entity.Property(e => e.Id).ValueGeneratedOnAdd();
-
                 entity.Property(e => e.Name).HasMaxLength(50);
 
                 entity.Property(e => e.Password).HasMaxLength(50);

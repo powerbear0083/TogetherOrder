@@ -10,7 +10,7 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
-using TogetherOrder.Models;
+
 
 namespace TogetherOrder
 {
@@ -45,8 +45,10 @@ namespace TogetherOrder
 
             app.UseEndpoints(endpoints =>
             {
-                endpoints.MapControllers();
+                endpoints.MapControllerRoute("default",
+                                                 "{controller=Account}/{action=Index}/{id?}");
             });
+
         }
     }
 }

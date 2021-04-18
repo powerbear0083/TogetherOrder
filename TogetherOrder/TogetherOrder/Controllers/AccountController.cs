@@ -11,12 +11,16 @@ namespace TogetherOrder.Controllers
     {
 
         [HttpPost]
-        public async Task<ActionResult<Account>> SignUp(string name, string password)
+        public ActionResult SignUp(string name, string password)
         {
+            var _togetherOrderContext = new togetherOrderContext();
 
+            _togetherOrderContext.Add(new Account { Name = name, Password = password });
 
+            _togetherOrderContext.SaveChanges();
 
+            return new JsonResult(true);
         }
     }
-    
+
 }
