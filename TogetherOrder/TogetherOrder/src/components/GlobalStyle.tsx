@@ -1,4 +1,6 @@
-﻿import { createGlobalStyle } from "styled-components";
+﻿import { createGlobalStyle } from "styled-components"
+import { fontFamily } from '../styled/constant'
+
 
 const ResetStyle = createGlobalStyle`
   *,
@@ -28,7 +30,7 @@ const ResetStyle = createGlobalStyle`
     margin: 0;
   }
   body {
-    font-family: Arial, Helvetica, 'LiHei', "Microsoft JhengHei", "PMingLiU", "微軟正黑體", "新細明體", sans-serif;
+    font-family: ${fontFamily};
     min-height: 100vh;
     scroll-behavior: smooth;
     text-rendering: optimizeSpeed;

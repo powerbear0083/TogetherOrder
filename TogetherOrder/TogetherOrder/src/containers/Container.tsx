@@ -19,7 +19,8 @@ function Container(
 export default Container
 
 const Wrap = styled.main`
-  width: 1140px;
+  background-color: #00ffff;
+  width: 100%;
   margin-right: auto;
   margin-left: auto;
 `
