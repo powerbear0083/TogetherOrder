@@ -1,23 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "E:\\together-order\\TogetherOrder\\TogetherOrder\\TogetherOrder\\TogetherOrder.csproj": {}
+    "D:\\aspNetCore\\togetherOrder\\TogetherOrder\\TogetherOrder\\TogetherOrder.csproj": {}
   },
   "projects": {
-    "E:\\together-order\\TogetherOrder\\TogetherOrder\\TogetherOrder\\TogetherOrder.csproj": {
+    "D:\\aspNetCore\\togetherOrder\\TogetherOrder\\TogetherOrder\\TogetherOrder.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "E:\\together-order\\TogetherOrder\\TogetherOrder\\TogetherOrder\\TogetherOrder.csproj",
+        "projectUniqueName": "D:\\aspNetCore\\togetherOrder\\TogetherOrder\\TogetherOrder\\TogetherOrder.csproj",
         "projectName": "TogetherOrder",
-        "projectPath": "E:\\together-order\\TogetherOrder\\TogetherOrder\\TogetherOrder\\TogetherOrder.csproj",
-        "packagesPath": "C:\\Users\\yinhsun.chou.DEV\\.nuget\\packages\\",
-        "outputPath": "E:\\together-order\\TogetherOrder\\TogetherOrder\\TogetherOrder\\obj\\",
+        "projectPath": "D:\\aspNetCore\\togetherOrder\\TogetherOrder\\TogetherOrder\\TogetherOrder.csproj",
+        "packagesPath": "C:\\Users\\Yinhsun.Chou\\.nuget\\packages\\",
+        "outputPath": "D:\\aspNetCore\\togetherOrder\\TogetherOrder\\TogetherOrder\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
         ],
         "configFilePaths": [
-          "C:\\Users\\yinhsun.chou.DEV\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Yinhsun.Chou\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -73,7 +73,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.103\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.200\\RuntimeIdentifierGraph.json"
         }
       }
     }
