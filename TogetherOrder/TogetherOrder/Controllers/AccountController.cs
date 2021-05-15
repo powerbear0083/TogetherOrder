@@ -13,14 +13,13 @@ namespace TogetherOrder.Controllers
         [HttpPost]
         public ActionResult SignUp(string name, string password)
         {
-            var _togetherOrderContext = new togetherOrderContext();
+            var togetherOrderContext = new togetherOrderContext();
+            togetherOrderContext.Add(new Account { Name = name, Password = password });
 
-            _togetherOrderContext.Add(new Account { Name = name, Password = password });
-
-            _togetherOrderContext.SaveChanges();
+            togetherOrderContext.SaveChanges();
 
             return new JsonResult(true);
         }
     }
-
+    
 }
