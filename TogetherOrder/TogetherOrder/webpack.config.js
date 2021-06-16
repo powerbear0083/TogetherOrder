@@ -56,9 +56,14 @@ module.exports = {
         ]
     },
     plugins: [
-        new HtmlWebpackPlugin({
-            title: 'Development',
-            template: path.resolve(__dirname, "src", "index.html")
-        })
+        new HtmlWebpackPlugin(
+            {
+                meta: {
+                    viewport: 'width=device-width, initial-scale=1.0',
+                },
+                title: '開發模式',
+                template: path.resolve(__dirname, "src", "index.html")
+            }
+        )
     ]
 };
