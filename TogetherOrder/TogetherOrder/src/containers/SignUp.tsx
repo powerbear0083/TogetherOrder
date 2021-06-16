@@ -2,8 +2,10 @@
 import styled from "styled-components";
 import { Button } from "../styled/Button";
 
-
 function SignUp() {
+    function onClick(e: React.MouseEvent<HTMLButtonElement>) {
+        console.log(e)
+    }
     return (
         <SignWrap>
             <Headline>
@@ -17,7 +19,9 @@ function SignUp() {
                 <label htmlFor="orderPassword">密碼</label>
                 <input id={`orderPassword`} type="password"/>
             </div>
-            <Confirm>開使訂</Confirm>
+            <Confirm
+                onClick={onClick}
+            >開使訂</Confirm>
         </SignWrap>
     )
 }
@@ -25,7 +29,7 @@ function SignUp() {
 export default SignUp
 
 const SignWrap = styled.div`
-    width: 640px;
+    width: 960px;
     margin-left: auto;
     margin-right: auto;
 `
