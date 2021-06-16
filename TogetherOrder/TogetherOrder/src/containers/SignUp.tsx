@@ -1,27 +1,23 @@
 ﻿import * as React from 'react'
 import styled from "styled-components";
+import { colors } from '../styled/Constant'
 import { Button } from "../styled/Button";
+import { Input } from "../styled/Input";
+
 
 function SignUp() {
-    function onClick(e: React.MouseEvent<HTMLButtonElement>) {
-        console.log(e)
-    }
     return (
         <SignWrap>
-            <Headline>
-                 一起訂
-            </Headline>
+            <h1 className="fz32-bold text-center">一起訂</h1>
             <div className="form-group">
                 <label htmlFor="orderName">訂單名稱</label>
-                <input id={`orderName`} type="text"/>
+                <Input />
             </div>
             <div className="form-group">
                 <label htmlFor="orderPassword">密碼</label>
                 <input id={`orderPassword`} type="password"/>
             </div>
-            <Confirm
-                onClick={onClick}
-            >開使訂</Confirm>
+            <Confirm>開使訂</Confirm>
         </SignWrap>
     )
 }
@@ -29,15 +25,12 @@ function SignUp() {
 export default SignUp
 
 const SignWrap = styled.div`
-    width: 960px;
+    width: 480px;
+    margin-top: 10%;
     margin-left: auto;
     margin-right: auto;
 `
-const Headline = styled.div`
-    font-size: 20px;
-    font-weight: bold;
-`
 const Confirm = styled(Button)`
-  background-color: #ff8c00;
-  color: #fff;
+  background-color: ${colors.primary};
+  color: ${colors.white};
 `;

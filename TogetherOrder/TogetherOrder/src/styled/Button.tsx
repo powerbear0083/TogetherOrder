@@ -1,12 +1,12 @@
 ﻿import styled from "styled-components";
-import { fontFamily } from './constant'
+import { fontFamily, colors } from './Constant'
 
 export const Button = styled.button`
   display: inline-block;
   font-family: ${fontFamily};
   font-weight: bold;
   line-height: 1.5;
-  color: #323232;
+  color: ${colors.secondary};
   text-align: center;
   text-decoration: none;
   vertical-align: middle;
