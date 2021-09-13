@@ -7,7 +7,7 @@
  * @param { number } value 
  */
 export function pxToRem(value:  number) {
-    return value / 100
+    return `${value / 100}rem`
 }
 
 /**

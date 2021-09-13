@@ -5,7 +5,13 @@
 /**
  * @description 色票
  */
-export const colors = {
+
+type Colors = {
+    primary: string,
+    secondary: string,
+    white: string
+}
+export const colors: Colors = {
     primary: '#FFBC1C',
     secondary: '#3B63BC',
     white: '#FFFFFF'
@@ -14,12 +20,20 @@ export const colors = {
 /**
  * @description 字形
  */
-export const fontFamily = 'Arial, Helvetica, \'LiHei\', "Microsoft JhengHei", "PMingLiU", "微軟正黑體", "新細明體", sans-serif'
+export const fontFamily: string = 'Arial, Helvetica, \'LiHei\', "Microsoft JhengHei", "PMingLiU", "微軟正黑體", "新細明體", sans-serif'
 
 /**
  * @description 字級
  */
-export const fontSize = {
+type FontSize = {
+    fz13: number,
+    fz16: number,
+    fz20: number,
+    fz24: number,
+    fz28: number,
+    fz32: number
+}
+export const fontSize:FontSize = {
     fz13: 13,
     fz16: 16,
     fz20: 20,
@@ -28,11 +42,11 @@ export const fontSize = {
     fz32: 32
 }
 
-/**
- * @description 
- */
-export const textAlignment = {
-    'text-left': 'left',
-    'text-center': 'center',
-    'text-right': 'right'
+type BreakPoint = {
+    mobile: number,
+    desktop: number
+}
+export const breakpoint: BreakPoint = {
+    mobile: 320,
+    desktop: 768
 }

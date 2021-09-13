@@ -2,20 +2,29 @@
 import styled from "styled-components";
 import { colors } from '../styled/Constant'
 import { Button } from "../styled/Button";
-import { Input } from "../styled/Input";
+import { Label } from "../component/Label";
+import { Input } from "../component/Input";
+import { PasswordInput } from "../component/PasswordInput";
 
 
 function SignUp() {
     return (
-        <SignWrap>
+        <SignWrap className="layout-mobile p-right-8 p-left-8">
             <h1 className="fz32-bold text-center">一起訂</h1>
             <div className="form-group">
-                <label htmlFor="orderName">訂單名稱</label>
-                <Input />
+                <Label htmlFor="orderName">訂單名稱</Label>
+                <Input 
+                    id="orderName"
+                    placeholder="請輸入訂單名稱"
+                />
             </div>
             <div className="form-group">
-                <label htmlFor="orderPassword">密碼</label>
-                <input id={`orderPassword`} type="password"/>
+                <Label htmlFor="orderPassword">訂單名稱</Label>
+                <PasswordInput 
+                    id={`orderPassword`}
+                    type={`password`}
+                    placeholder="請輸入密碼"
+                />
             </div>
             <Confirm>開使訂</Confirm>
         </SignWrap>
@@ -25,12 +34,11 @@ function SignUp() {
 export default SignUp
 
 const SignWrap = styled.div`
-    width: 480px;
     margin-top: 10%;
     margin-left: auto;
     margin-right: auto;
 `
 const Confirm = styled(Button)`
   background-color: ${colors.primary};
-  color: ${colors.white};
+
 `;

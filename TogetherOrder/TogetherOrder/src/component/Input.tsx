@@ -1,8 +1,16 @@
 ﻿import styled from "styled-components";
-import { colors } from './Constant'
-import { pxToRem, hexToRgba } from "./Helper"
+import { colors } from '../styled/Constant'
+import { pxToRem, hexToRgba } from "../styled/Helper"
 
-export const Input = styled.input`
+type InputProps = {
+    id: string,
+    type: string
+}
+
+export const Input = styled.input.attrs<InputProps>( props => ({
+    id: props.id ? props.id : '',
+    type: props.type ? props.type : 'text'
+}))`
   display: block;
   width: 100%;
   height: ${pxToRem(38)};
