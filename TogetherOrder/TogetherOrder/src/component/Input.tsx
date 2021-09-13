@@ -1,6 +1,6 @@
 ﻿import styled from "styled-components";
-import { colors } from '../styled/Constant'
-import { pxToRem, hexToRgba } from "../styled/Helper"
+import { colors } from '../Styled/Constant'
+import { pxToRem, hexToRgba } from "../Styled/Helper"
 
 type InputProps = {
     id: string,
