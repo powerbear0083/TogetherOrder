@@ -5,18 +5,17 @@ import { pxToRem, hexToRgba } from "./Helper"
 export const Input = styled.input`
   display: block;
   width: 100%;
-  height: ${pxToRem(38)}rem;
-  padding: ${pxToRem(12)}rem;
+  height: ${pxToRem(38)};
+  padding: ${pxToRem(12)};
   line-height: 1.5;
-  color: ${colors.primary};
+  color: ${colors.secondary};
   background-color: ${hexToRgba(colors.secondary, .1)};
   border: 1px solid ${hexToRgba(colors.secondary, .1)};
-  border-radius: ${pxToRem(6)}rem;
+  border-radius: ${pxToRem(6)};
   &:focus {
-    //border: 1px solid ${hexToRgba(colors.secondary, .2)};
-    background-color: #fff;
-    border-color: #80bdff;
+    background-color: ${colors.white};
+    border-color: ${hexToRgba(colors.primary, .1)};
     outline: 0;
-    box-shadow: 0 0 0 .2rem rgba(0,123,255,.25);
+    box-shadow: 0 0 0 ${pxToRem(2)} ${hexToRgba(colors.secondary, .5)};
   }
 `                          
