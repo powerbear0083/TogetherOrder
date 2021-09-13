@@ -244,3 +244,9 @@ TogetherOrder/TogetherOrder/obj/Debug/netcoreapp3.1/TogetherOrder.csproj.CoreCom
 TogetherOrder/TogetherOrder/obj/Debug/netcoreapp3.1/TogetherOrder.csproj.FileListAbsolute.txt
 TogetherOrder/TogetherOrder/obj/Debug/netcoreapp3.1/TogetherOrder.dll
 TogetherOrder/TogetherOrder/obj/Debug/netcoreapp3.1/TogetherOrder.genruntimeconfig.cache
+*.xml
+*.iml
+*.v2
+*.suo
+*.exe
+*.props
