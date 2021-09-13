@@ -1,7 +1,7 @@
 ﻿import * as React from "react";
 import * as ReactDOM from "react-dom";
-import SignUp from "./containers/SignUp";
-import GlobalStyle from "./styled/GlobalStyle";
+import SignUp from './Containers/Account/SignUp'
+import GlobalStyle from "./Styled/GlobalStyle";
 
 
 function App() {

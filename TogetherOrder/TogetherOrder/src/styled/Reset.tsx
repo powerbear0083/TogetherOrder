@@ -1,6 +1,6 @@
 ﻿import { css } from 'styled-components'
 import { fontFamily, fontSize, colors } from './Constant'
-import { pxToRem, hexToRgba } from "./Helper"
+import { pxToRem, hexToRgba } from './Helper'
 
 const Reset = css`
   *,

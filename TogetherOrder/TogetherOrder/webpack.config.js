@@ -4,11 +4,11 @@ const HtmlWebpackPlugin = require("html-webpack-plugin")
 module.exports = {
     mode: 'development',
     entry: { 
-        app: path.resolve(__dirname, "src", "index.tsx") 
+        app: path.resolve(__dirname, "src", "Index.tsx") 
     },
     output: {
         filename: '[name].[contenthash].bundle.js',
-        path: path.resolve(__dirname, "dist"),
+        path: path.resolve(__dirname, "Dist"),
         clean: true,
     },
     devtool: 'source-map',

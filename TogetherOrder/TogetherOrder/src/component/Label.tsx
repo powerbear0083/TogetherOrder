@@ -1,5 +1,5 @@
 ﻿import styled from "styled-components";
-import { pxToRem } from "../styled/Helper"
+import { pxToRem } from "../Styled/Helper"
 
 type LabelProps = {
     htmlFor: string

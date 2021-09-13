@@ -7,14 +7,14 @@ function generateCols():number[] {
     for(let i = 1; i < 13; i++) {
         result.push(i)
     }
-    return result.reverse()
+    return result
 }
 
 const Grid = css`
   ${
-    generateCols().map( size => css`
-        ${
-
+    generateCols().map( (col) => css`
+        .col-${col} {
+          width: ${(col / 12) * 100}%;
         }
     `)
   }
