@@ -236,3 +236,11 @@ _Pvt_Extensions
 *./node_modules/
 
 TogetherOrder/TogetherOrder/obj/
+*.pdb
+TogetherOrder/TogetherOrder/bin/Debug/netcoreapp3.1/TogetherOrder.deps.json
+TogetherOrder/TogetherOrder/bin/Debug/netcoreapp3.1/TogetherOrder.dll
+TogetherOrder/TogetherOrder/bin/Debug/netcoreapp3.1/TogetherOrder.runtimeconfig.dev.json
+TogetherOrder/TogetherOrder/obj/Debug/netcoreapp3.1/TogetherOrder.csproj.CoreCompileInputs.cache
+TogetherOrder/TogetherOrder/obj/Debug/netcoreapp3.1/TogetherOrder.csproj.FileListAbsolute.txt
+TogetherOrder/TogetherOrder/obj/Debug/netcoreapp3.1/TogetherOrder.dll
+TogetherOrder/TogetherOrder/obj/Debug/netcoreapp3.1/TogetherOrder.genruntimeconfig.cache
