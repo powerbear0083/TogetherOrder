@@ -13,7 +13,7 @@ function SignUp() {
     const [password, setPassword] = React.useState('')
     async function onClick() {
         const signUpFields = {
-            orderName,
+            name: orderName,
             password
         } 
         try {

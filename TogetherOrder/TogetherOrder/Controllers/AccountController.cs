@@ -11,10 +11,10 @@ namespace TogetherOrder.Controllers
     {
 
         [HttpPost]
-        public ActionResult SignUp(string name, string password)
+        public ActionResult SignUp(Account account)
         {
             var togetherOrderContext = new togetherOrderContext();
-            togetherOrderContext.Add(new Account { Name = name, Password = password });
+            togetherOrderContext.Add(new Account { Name = account.Name, Password = account.Password });
 
             togetherOrderContext.SaveChanges();
 
