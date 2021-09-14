@@ -17,8 +17,8 @@ function SignUp() {
             password
         } 
         try {
-            const a = await signUpApi( signUpFields )
-            console.log('a', a)
+            const result = await signUpApi( signUpFields )
+            result && alert('訂單建立成功')
         }
         catch (error) {
             console.log('error', error)

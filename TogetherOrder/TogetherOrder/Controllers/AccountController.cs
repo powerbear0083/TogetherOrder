@@ -11,7 +11,7 @@ namespace TogetherOrder.Controllers
     {
 
         [HttpPost]
-        public ActionResult SignUp(Account account)
+        public ActionResult SignUp([FromBody] Account account)
         {
             var togetherOrderContext = new togetherOrderContext();
             togetherOrderContext.Add(new Account { Name = account.Name, Password = account.Password });
