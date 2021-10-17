@@ -28,7 +28,7 @@ function SignUp() {
 
     return (
         <SignWrap className="layout-mobile p-right-8 p-left-8">
-            <h1 className="fz32-bold text-center">一起訂</h1>
+            <h1 className="fz32-bold text-center m-bottom-24">一起訂</h1>
             <div className="form-group">
                 <Label htmlFor="orderName">訂單名稱</Label>
                 <Input 
